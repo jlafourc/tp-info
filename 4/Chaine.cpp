@@ -1,6 +1,12 @@
 #include "Chaine.h"
 #include <cstring>
 
+Chaine::Chaine() {
+	longueur = 0;
+	capacite = TAILLE_BLOC;
+	tab = new char[capacite];
+}
+
 Chaine::Chaine(Chaine& c) {
 	longueur = c.longueur;
 	capacite = c.capacite;
